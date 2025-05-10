@@ -1,0 +1,204 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hiFly Roblox Airline</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #000000;
+      --secondary: #3fc8f6;
+      --accent: #d2f1ff;
+      --text: #ffffff;
+      --highlight: #00f0ff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header img {
+      width: 150px;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--accent);
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .buttons {
+      margin-top: 2rem;
+    }
+
+    .buttons a {
+      padding: 1rem 2rem;
+      background: var(--highlight);
+      color: var(--primary);
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 0.5rem;
+      transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+      display: inline-block;
+      box-shadow: 0 0 10px var(--highlight);
+    }
+
+    .buttons a:hover {
+      background: var(--text);
+      transform: scale(1.1);
+      box-shadow: 0 0 20px white;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.3);
+      font-size: 0.9rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 0.7rem 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.ibb.co/TBLL8WDL/hiflysquare-removebg-preview.png" alt="hiFly Logo">
+    <h1>Welcome to hiFly</h1>
+    <p>“Where Virtual Skies Become Reality” — Apply Now and Soar with Us!</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#why">Why Choose Us</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>hiFly is more than just a Roblox airline — it's an aviation community driven by passion, precision, and a dream to fly. Founded with a vision to deliver elite virtual experiences, hiFly offers realistic roleplay flights, luxury cabin services, and a welcoming community of aviation enthusiasts. Our skilled staff, frequent events, and stunning airports set us apart as a leader in Roblox aviation. Join a journey that blends entertainment, community, and professionalism.</p>
+  </section>
+
+  <section class="buttons"><a href="https://discord.gg/uFeMySmGVj" target="_blank">Join Discord Server</a>
+    
+    <a href="https://www.roblox.com/communities/35851104/hiFly-RBLX#!/about" target="_blank">Visit Roblox Group</a>
+    <a href="https://bit.ly/hifly-applications" target="_blank">Apply Now</a>
+  </section>
+
+  <section id="why">
+    <h2>Why Choose hiFly?</h2>
+    <p>We don’t just take you from one destination to another — we deliver unforgettable virtual journeys. Discover why hundreds of members choose hiFly:</p>
+    <ul>
+      <li>✈️ Ultra-realistic plane models and interactive experiences</li>
+      <li>🧑&zwj;✈️ Friendly and professional cabin crew &amp; pilot training</li>
+      <li>✨ Weekly flights, events, and seasonal tours</li>
+      <li>🏆 Rewards and rankings to boost your career</li>
+      <li>❤️ A passionate, active community with 24/7 support</li>
+      <li>🎉 Frequent giveaways, custom liveries, and private charters</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Explore Our Fleet</h2>
+    <div class="gallery">
+      <img src="https://i.ibb.co/1J0bwJr2/Chat-GPT-Image-May-10-2025-09-36-21-PM.png" alt="hiFly Plane 1">
+      <img src="https://i.ibb.co/pjSj0Fs1/Chat-GPT-Image-May-10-2025-09-34-09-PM.png" alt="hiFly Plane 2">
+      <img src="https://i.ibb.co/dJkGhCMt/Chat-GPT-Image-May-10-2025-09-31-45-PM.png" alt="hiFly Plane 3">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 hiFly Roblox Airline. All Rights Reserved.
+  </footer>
+
+
+</body></html>
