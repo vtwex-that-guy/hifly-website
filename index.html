@@ -1,8 +1,10 @@
-<html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>hiFly Roblox Airline</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <style>
     :root {
       --primary: #000000;
@@ -22,17 +24,15 @@
     body {
       background: linear-gradient(to right, var(--primary), var(--secondary));
       color: var(--text);
-      overflow-x: hidden;
     }
 
     header {
       text-align: center;
       padding: 2rem 1rem;
-      animation: fadeIn 2s ease-in-out;
     }
 
     header img {
-      width: 150px;
+      width: 160px;
       margin-bottom: 1rem;
     }
 
@@ -43,20 +43,16 @@
 
     header p {
       font-size: 1.2rem;
-      color: var(--accent);
       margin-top: 0.5rem;
-      font-style: italic;
+      color: var(--accent);
     }
 
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
-      padding: 1rem;
       background-color: rgba(255, 255, 255, 0.05);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      padding: 1rem;
     }
 
     nav a {
@@ -72,22 +68,24 @@
 
     section {
       padding: 4rem 2rem;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
-      text-align: center;
     }
 
     h2 {
+      text-align: center;
       font-size: 2.5rem;
       margin-bottom: 1rem;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      text-align: center;
       line-height: 1.8;
     }
 
     .buttons {
+      text-align: center;
       margin-top: 2rem;
     }
 
@@ -95,19 +93,17 @@
       padding: 1rem 2rem;
       background: var(--highlight);
       color: var(--primary);
-      border-radius: 10px;
-      font-weight: 600;
+      border-radius: 8px;
       text-decoration: none;
       margin: 0.5rem;
-      transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.3s ease;
       display: inline-block;
-      box-shadow: 0 0 10px var(--highlight);
     }
 
     .buttons a:hover {
       background: var(--text);
-      transform: scale(1.1);
-      box-shadow: 0 0 20px white;
+      transform: scale(1.05);
     }
 
     .gallery {
@@ -120,12 +116,42 @@
     .gallery img {
       width: 100%;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
-    .gallery img:hover {
-      transform: scale(1.05);
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .team-member {
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      width: 200px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 2px solid var(--accent);
+    }
+
+    .team-member h3 {
+      margin-bottom: 0.3rem;
     }
 
     footer {
@@ -134,71 +160,76 @@
       background: rgba(0, 0, 0, 0.3);
       font-size: 0.9rem;
     }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      margin: 0.7rem 0;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="https://i.ibb.co/TBLL8WDL/hiflysquare-removebg-preview.png" alt="hiFly Logo">
+    <img src="hiflysquare.png" alt="hiFly Logo" />
     <h1>Welcome to hiFly</h1>
-    <p>“Where Virtual Skies Become Reality” — Apply Now and Soar with Us!</p>
+    <p>Your Flight, Our Passion. Join the Sky Revolution.</p>
   </header>
 
   <nav>
     <a href="#about">About Us</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#why">Why Choose Us</a>
+    <a href="#leadership">Leadership</a>
+    <a href="https://discord.gg/uFeMySmGVj" target="_blank">Join Discord</a>
+    <a href="https://www.roblox.com/communities/35851104/hiFly-RBLX#!/about" target="_blank">Visit Roblox Group</a>
+    <a href="https://bit.ly/hifly-applications" target="_blank">Apply Now</a>
   </nav>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>hiFly is more than just a Roblox airline — it's an aviation community driven by passion, precision, and a dream to fly. Founded with a vision to deliver elite virtual experiences, hiFly offers realistic roleplay flights, luxury cabin services, and a welcoming community of aviation enthusiasts. Our skilled staff, frequent events, and stunning airports set us apart as a leader in Roblox aviation. Join a journey that blends entertainment, community, and professionalism.</p>
-  </section>
-
-  <section class="buttons"><a href="https://discord.gg/uFeMySmGVj" target="_blank">Join Discord Server</a>
-    
-    <a href="https://www.roblox.com/communities/35851104/hiFly-RBLX#!/about" target="_blank">Visit Roblox Group</a>
-    <a href="https://bit.ly/hifly-applications" target="_blank">Apply Now</a>
-  </section>
-
-  <section id="why">
-    <h2>Why Choose hiFly?</h2>
-    <p>We don’t just take you from one destination to another — we deliver unforgettable virtual journeys. Discover why hundreds of members choose hiFly:</p>
-    <ul>
-      <li>✈️ Ultra-realistic plane models and interactive experiences</li>
-      <li>🧑&zwj;✈️ Friendly and professional cabin crew &amp; pilot training</li>
-      <li>✨ Weekly flights, events, and seasonal tours</li>
-      <li>🏆 Rewards and rankings to boost your career</li>
-      <li>❤️ A passionate, active community with 24/7 support</li>
-      <li>🎉 Frequent giveaways, custom liveries, and private charters</li>
-    </ul>
+    <p>
+      hiFly Roblox is a cutting-edge virtual airline dedicated to delivering unforgettable in-game travel experiences.
+      From immersive roleplays to top-tier in-flight services, our goal is to simulate aviation with realism, style, and excitement.
+      With dedicated staff and frequent flights, hiFly offers a community-first environment for passengers and crew alike.
+    </p>
   </section>
 
   <section id="gallery">
-    <h2>Explore Our Fleet</h2>
+    <h2>Gallery</h2>
     <div class="gallery">
-      <img src="https://i.ibb.co/1J0bwJr2/Chat-GPT-Image-May-10-2025-09-36-21-PM.png" alt="hiFly Plane 1">
-      <img src="https://i.ibb.co/pjSj0Fs1/Chat-GPT-Image-May-10-2025-09-34-09-PM.png" alt="hiFly Plane 2">
-      <img src="https://i.ibb.co/dJkGhCMt/Chat-GPT-Image-May-10-2025-09-31-45-PM.png" alt="hiFly Plane 3">
+      <img src="plane1.jpg" alt="Plane 1">
+      <img src="plane2.jpg" alt="Plane 2">
+      <img src="plane3.jpg" alt="Plane 3">
+    </div>
+  </section>
+
+  <section id="leadership">
+    <h2>Leadership Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-935C7F700910E0827AD51565B3984945-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="vtwex">
+        <h3>vtwex</h3>
+        <p>Group Operations Manager/Officer</p>
+      </div>
+      <div class="team-member">
+        <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-F9E9E188B3BD66B7AAD71D6F97C48289-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="rayyanheyplayz">
+        <h3>rayyanheyplayz</h3>
+        <p>Group Owner</p>
+      </div>
+      <div class="team-member">
+        <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-49D53C09F0CA194ED3542657C73E6767-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="wowyma">
+        <h3>wowyma</h3>
+        <p>Group Staffing Officer</p>
+      </div>
+       <div class="team-member">
+        <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-49D53C09F0CA194ED3542657C73E6767-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="wowyma">
+        <h3>wowyma</h3>
+        <p>Group Executive Officer</p>
+      </div>
+       <div class="team-member">
+        <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-2B75A800AE04A3EF256BEFFDA00E4DDE-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="bredaamsterdam">
+        <h3>bredaamsterdam</h3>
+        <p>Group Staffing Officer</p>
+      </div>
     </div>
   </section>
 
   <footer>
-    © 2025 hiFly Roblox Airline. All Rights Reserved.
+    &copy; 2025 hiFly Roblox Airline. All rights reserved.
   </footer>
 
-
-</body></html>
+</body>
+</html>
